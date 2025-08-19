@@ -1,10 +1,16 @@
-
-
 # Hanggang Sa Dulo Flight Computer
 
-An Arduino-compatible flight computer firmware for high-powered model rockets. The system manages arming, ascent detection, dual-parachute deployment (drogue and main), and telemetry via a built‑in Wi‑Fi access point (ESP32). It is built as a single `.ino` sketch with a companion `GlobalVariables.h` configuration header.
+An Arduino-compatible **flight computer** firmware for high-powered model rockets and CanSats, targeting **ESP32** (ESP32‑WROOM / DevKitC). The system manages arming, ascent/apogee detection, dual‑parachute deployment (drogue & main), and **telemetry via ESP32 Wi‑Fi SoftAP**. This code should also be compatible with other microcontrollers with a few tweaks.
 
 > **Safety-critical**: This firmware controls energetic devices (pyrotechnic charges). Bench‑test with inert loads (e.g., lamps/resistors) and **remove all energetic materials** during development. Follow your local range safety code.
+
+---
+
+## Hardware Platform — ESP32
+
+- Tested on **ESP32 Dev Module** (ESP32‑WROOM).  
+- Logic level: **3.3 V**.  
+- Use **external pyro drivers** (low‑side MOSFET + current‑rated supply or a dedicated pyro board). **Do not** drive e‑matches directly from the ESP32.
 
 ---
 
