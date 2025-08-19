@@ -1,3 +1,46 @@
+/*
+ * Flight Computer Firmware
+ * File: FlightComputerIntegratedFinalVersion.ino
+ *
+ * Copyright (c) 2025 Hanggang Sa Dulo
+ * SPDX-License-Identifier: MIT
+ *
+ * Summary:
+ *   Safety-critical firmware for a rocket/CanSat flight computer providing
+ *   state management, ascent/apogee detection, and dual-channel ejection.
+ *
+ * SAFETY NOTICE:
+ *   This software may control energetic devices (e.g., pyrotechnic charges).
+ *   Bench-test with inert loads only. Remove all energetic materials during
+ *   development. Follow local laws and range safety codes. You are responsible
+ *   for integration, testing, and operation in your vehicle.
+ *
+ * Licensing:
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * Date: 2025-07-20
+ * Repository: https://github.com/mikeedudee/HanggangSaDuloFlightComputer.git
+ * Contact: francismikejohn.camogao@gmail.com
+ */
+
 #include "FS.h"                 // File system
 #include "SPIFFS.h"             // SPI Flash file system
 #include <Wire.h>               // I2C communication
@@ -562,4 +605,5 @@ void addToBuffer(const DataPoint &pt) {
         memmove(bufferArray, bufferArray + 1, sizeof(DataPoint) * 9);
         bufferArray[9] = pt;
     }
+
 }
