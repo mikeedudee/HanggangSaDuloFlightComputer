@@ -2,7 +2,7 @@
  * Flight Computer Firmware
  * File: FlightComputerIntegratedFinalVersion.ino
  *
- * Copyright (c) 2025 Hanggang Sa Dulo
+ * Copyright (c) 2024-2025 Hanggang Sa Dulo
  * SPDX-License-Identifier: MIT
  *
  * Summary:
@@ -106,3 +106,4 @@ int                                     FlightState                     = 0;
 
 
 #endif
+
