@@ -30,7 +30,7 @@ static constexpr int                    PIN_BUZZER                      = 4;    
 static constexpr int                    DEPLOY_PINS_DROUGE[]            = { 32, 33 };       // Array of deployment pins for charges Drouge
 static constexpr int                    DEPLOY_PINS_MAIN[]              = { 27, 13};        // Array of deployment pins for charges Main
 static constexpr size_t                 NUM_DEPLOY_PINS                 = (sizeof(DEPLOY_PINS_DROUGE) + sizeof(DEPLOY_PINS_MAIN))/sizeof(DEPLOY_PINS_DROUGE[0]);            // Number of deploy pins
-//static constexpr size_t                 NUM_DEPLOY_PINs_MAIN            = 2;
+
 int                                     deploymentChargeDrouge          = 0;                // Deployment charge pin (not used in this version, but reserved)
 uint8_t                                 mainDeploymentAltitude          = 300;              // Descent deployment altitude (in meters) for the main parachute
 uint8_t                                 DeploymentAltitudeMain          = 0.0;              // Drouge deployment altitude (in meters)
@@ -63,3 +63,4 @@ unsigned long                           lastBlinkTime                   = 0UL;  
 int                                     FlightState                     = 0;                // Flight state counter
 
 #endif
+
