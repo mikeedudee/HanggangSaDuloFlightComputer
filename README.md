@@ -1,4 +1,13 @@
-# Hanggang Sa Dulo Flight Computer
+# HANGGANG SA DULO FLIGHT COMPUTER
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-ESP32-blue" alt="Platform: ESP32">
+  <img src="https://img.shields.io/badge/Framework-Arduino%20Core-00979D?logo=arduino" alt="Arduino Core">
+  <img src="https://img.shields.io/badge/Alt_Telemetry-WiFi%20SoftAP-2ea44f" alt="Wi‑Fi SoftAP">
+  <img src="https://img.shields.io/badge/Language-C++%20(Arduino)-00599C?logo=c%2B%2B" alt="C++ (Arduino)">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/Domain-Safety--Critical-%23d73a49" alt="Safety‑Critical">
+</p>
 
 An Arduino-compatible **flight computer** firmware for high-powered model rockets and CanSats, targeting **ESP32** (ESP32‑WROOM / DevKitC). The system manages arming, ascent/apogee detection, dual‑parachute deployment (drogue & main), and **telemetry via ESP32 Wi‑Fi SoftAP**. This code should also be compatible with other microcontrollers with a few tweaks.
 
@@ -124,6 +133,32 @@ All runtime parameters live in `GlobalVariables.h`. Update these for your vehicl
 - Prefer constant‑time loops and avoid blocking delays in the main loop.  
 - Add unit or bench tests for state transitions and firing conditions.  
 - Document any changes to thresholds/pins in the README and header.
+
+---
+
+## License
+
+**MIT License**
+
+Copyright (c) 2024–2025 HANGGANG SA DULO
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 ---
 
