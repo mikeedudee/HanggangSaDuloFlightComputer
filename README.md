@@ -2,7 +2,7 @@
 
 # Hanggang Sa Dulo Flight Computer
 
-An Arduino-compatible flight computer firmware for high-powered model rockets and CanSats. The system manages arming, ascent detection, dual-parachute deployment (drogue and main), and telemetry via a built‑in Wi‑Fi access point. It is built as a single `.ino` sketch with a companion `GlobalVariables.h` configuration header.
+An Arduino-compatible flight computer firmware for high-powered model rockets. The system manages arming, ascent detection, dual-parachute deployment (drogue and main), and telemetry via a built‑in Wi‑Fi access point (ESP32). It is built as a single `.ino` sketch with a companion `GlobalVariables.h` configuration header.
 
 > **Safety-critical**: This firmware controls energetic devices (pyrotechnic charges). Bench‑test with inert loads (e.g., lamps/resistors) and **remove all energetic materials** during development. Follow your local range safety code.
 
@@ -124,4 +124,3 @@ All runtime parameters live in `GlobalVariables.h`. Update these for your vehicl
 ## Acknowledgements
 
 Built by the HANGGANG SA DULO Flight Team. Lessons learned are continually folded back into safer, clearer code and documentation.
-"""
