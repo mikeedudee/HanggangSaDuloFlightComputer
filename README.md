@@ -179,7 +179,7 @@ During the setup and initialization phase on the launchpad, our team experienced
 The issue was traced to an unchecked line of code in the `setup()` sequence. The GPIO pins controlling the MOSFETs were not explicitly initialized to their "SAFE" (LOW) state before the main loop began, or leftover simulation logic (toggling pins HIGH) was inadvertently left active.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/22998e9e-7481-4da3-9d6b-dce9e85b2dd8" alt="Incident Code Snippet" width="80%">
+  <img src="https://github.com/user-attachments/assets/ce71a8dc-db7d-41fa-98b0-ea49ad1ff57e" alt="Incident Code Snippet" width="80%">
 </p>
 
 **The Fix (Mandatory Check):**
