@@ -45,8 +45,12 @@
 * **Chester Hahne Conde**
 * **Ezralph Legara**
 
-**Competition Joined**
+**Competition Joined:**
 * 1st Philippine CanSatellite and Rocket Competition, July 2025.
+
+**Affiliation:**
+* Indiana Aerospace University. [Website](https://iau.com.ph/)
+* Aerospace Engineering Department
 
 ---
 
@@ -55,15 +59,14 @@
 
 **STATUS:** Flight Ready (subject to HIL verification).
 
-The **HANGGANG SA DULO Flight Computer** is a safety-critical avionics software developed for high-power rocketry missions. The programming structure runs on the **ESP32** microcontroller platform but can also be modified to be compatible with other microcontrollers (e.g., any Teensy or Arduino), utilizing the **MS5611** high-precision barometric sensor for altitude determination.
+Our rocket's **Flight Computer Algorithm** is designed to be a safety-critical avionics software developed for high-power rocketry missions. The programming structure runs on the **ESP32** microcontroller platform but can also be modified to be compatible with other microcontrollers (e.g., any Teensy or Arduino), utilizing the **MS5611** high-precision barometric sensor for altitude determination.
 
 This system implements a deterministic **Finite State Machine (FSM)** to manage flight phases, from ground idling to dual-deployment recovery. It is built strictly following the **NASA Power of Ten** coding standards to ensure maximum reliability in harsh operating environments.
 
 ### 🆕 What's New in v1.1.0
 * **Modular Architecture:** Codebase refactored into isolated modules (`Sensors`, `FlightLogic`, `GlobalVariables`) for improved maintainability.
 * **Safety Upgrade:** Implemented Hardware Watchdog Timer (WDT) to prevent system freezes.
-* **Incident Fix:** Added mandatory Active-Low initialization for Pyro channels to prevent premature firing (See *Critical Incident Report*).
-
+* **Incident Fix:** Added mandatory Active-Low initialization for Pyro channels to prevent premature firing (See <a href="#critical-incident-report">*Critical Incident Report*</a>). 
 ### 🚀 Key Features
 
 * **Dual Deployment Recovery:** Independent logic for **Drogue** (at Apogee) and **Main** parachutes (at 300m AGL).
@@ -79,7 +82,7 @@ This system implements a deterministic **Finite State Machine (FSM)** to manage 
     * **Black Box Logging:** Buffered writes to onboard Flash (SPIFFS) to capture high-speed descent data.
 
 ### Version 1.0.0
-  * [You can download the original unrefactored and unclean version (click me)](https://github.com/mikeedudee/HanggangSaDuloFlightComputer/tree/v1.0.0).
+  * You can download the original unrefactored and unclean version [here](https://github.com/mikeedudee/HanggangSaDuloFlightComputer/tree/v1.0.0).
 
 ---
 
@@ -93,7 +96,7 @@ The software is optimized for the following hardware configuration:
 | **MCU** | ESP32-WROOM-32 | Central Processing Unit |
 | **Sensor** | MS5611 (I2C) | Barometric Pressure & Temperature |
 | **Storage** | SPIFFS (Onboard Flash) | Telemetry Data Logging |
-| **Power** | 2S/3S LiPo | System Power |
+| **Power** | 2S LiPo | System Power Provides 1-2 hours continuous operation  |
 
 ### 🔌 Pinout Configuration
 
@@ -106,6 +109,38 @@ The software is optimized for the following hardware configuration:
 | **27, 13** | `DEPLOY_PINS_MAIN` | Main Ejection Charge (Active HIGH) |
 | **21 (SDA)** | I2C SDA | MS5611 Data |
 | **22 (SCL)** | I2C SCL | MS5611 Clock |
+
+### 🎚️ Thresholds and Timing
+
+> [!NOTE]
+> All runtime parameters live in `GlobalVariables.h`. Update these in accordance with your flight mission.
+
+| Parameter | Default | Meaning |
+|---|---:|---|
+| `ALT_ARM_THRESHOLD_M` | 10 m | Arming altitude. Below this value, ejection is inhibited. |
+| `ALT_DEPLOY_THRESHOLD_M` | 5 m | Nominal (low‑altitude) deployment threshold (use with caution). |
+| `ALT_RESET_THRESHOLD_M` | 50 m | Reset/logging stop threshold during descent. |
+| `MAX_ALT_JUMP_M` | 30 m | Reject unrealistically large altitude jumps. |
+| `LOOP_INTERVAL_MS` | 300 ms | Main loop cadence. |
+| `TIME_BASED_EJECTION_MS` | 12,000 ms | Contingency ejection delay once started. |
+| `FIRE_DURATION_MS` | 500 ms | Pyro firing pulse duration per channel. |
+| `CONTINGENCY_WAIT_MS` | 5,000 ms | Gap between contingency drogue and main fires. |
+| `CONTINGENCY_SAVE_PERIOD_MS` | 120,000 ms | Log period after contingency deployment. |
+| `RESET_SAVE_PERIOD_MS` | 3,000 ms | Log period after reset on descent. |
+
+### 🛜 Wi-Fi Configuration
+
+| Parameter | Default Value |
+|---|---:|
+| `WIFI_SSID` | HANGGANG SA DULO Telemetry |
+| `WIFI_PASSWORD` | HSDGRP09 |
+| `UDP_PORT` | 4210 |
+| `BROADCAST_IP` | 192, 168, 4, 255 |
+
+>[!NOTE]
+> **Main deployment setpoint**: `MAIN_DEPLOY_ALT_AGL_M = 300` meters (configure to your vehicle’s needs).
+> Likewise, in the Wi-Fi parameters, you change to your liking.
+
 
 > [!IMPORTANT]
 > **⚠️ WARNING:** Ensure your deployment hardware (MOSFETs/Relays) is **Active HIGH**. If using Active LOW relays, the firing logic in `GlobalVariables.h` must be inverted, or charges will fire on boot.
@@ -152,7 +187,7 @@ Install these via the Arduino Library Manager:
 
 ### Flashing Instructions
 1.  Clone/Download this repository.
-2.  **IMPORTANT:** Open the folder `HSD_Flight_Computer` and select `HSD_Flight_Computer.ino`.
+2.  **IMPORTANT:** Open the folder `HANGGANG SA DULO Flight Computer` then go to `main` folder and select `main.ino`.
 3.  *Note: The Arduino IDE will automatically open the associated module tabs (`FlightLogic`, `Sensors`).*
 4.  Connect your ESP32 via USB.
 5.  Click **Select Board > ESP32**.
