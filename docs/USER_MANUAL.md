@@ -1,7 +1,7 @@
 # HANGGANG SA DULO FLIGHT COMPUTER: USER MANUAL
 
 **Document ID:** HSD-UM-001  
-**Version:** 1.0 (Flight Ready)  
+**Version:** 1.1.0 (Flight Ready Subject to HIL verification)  
 **Applicability:** Ground Control & Recovery Teams  
 **System:** ESP32 / MS5611 Avionics Package
 
