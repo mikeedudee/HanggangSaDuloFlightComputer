@@ -253,4 +253,4 @@ See the [LICENSE](LICENSE) file for full details.
 ---
 
 ## Contributing
-Contributions, issues, and feature requests are welcome — please open an issue or submit a pull request on GitHub.
+Contributions, issues, and feature requests are welcome — please open an [issue](https://github.com/mikeedudee/HANGGANG-SA-DULO-High-Powered-Rocket-Flight-Computer/issues) or submit a pull request on GitHub. 
