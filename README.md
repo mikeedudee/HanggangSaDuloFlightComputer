@@ -106,9 +106,10 @@ The software is optimized for the following hardware configuration:
 | **21 (SDA)** | I2C SDA | MS5611 Data |
 | **22 (SCL)** | I2C SCL | MS5611 Clock |
 
-### Thresholds and Timing
+### 🎚️ Thresholds and Timing
 
-All runtime parameters live in `GlobalVariables.h`. Update these for your vehicle before flight.
+> [!NOTE]
+> All runtime parameters live in `GlobalVariables.h`. Update these in accordance with your flight mission before flight.
 
 | Parameter | Default | Meaning |
 |---|---:|---|
@@ -123,7 +124,7 @@ All runtime parameters live in `GlobalVariables.h`. Update these for your vehicl
 | `CONTINGENCY_SAVE_PERIOD_MS` | 120,000 ms | Log period after contingency deployment. |
 | `RESET_SAVE_PERIOD_MS` | 3,000 ms | Log period after reset on descent. |
 
-### Wi-Fi Configuration
+### 🛜 Wi-Fi Configuration
 
 | Parameter | Default Value |
 |---|---:|
