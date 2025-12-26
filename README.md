@@ -151,7 +151,7 @@ Install these via the Arduino Library Manager:
 
 ### Flight Computer Manual
 
-You can read the flight dedicated manual [here](https://github.com/mikeedudee/HANGGANG-SA-DULO-High-Powered-Rocket-Flight-Computer/blob/e7eedb402010caab72abb6217577f084e4449893/docs/USER_MANUAL.md).
+You can read the flight computer's dedicated manual [here](https://github.com/mikeedudee/HANGGANG-SA-DULO-High-Powered-Rocket-Flight-Computer/blob/e7eedb402010caab72abb6217577f084e4449893/docs/USER_MANUAL.md), this contain the pinout, default configurations, thresholds, and timings.
 
 ---
 
