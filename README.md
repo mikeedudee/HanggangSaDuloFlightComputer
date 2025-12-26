@@ -149,9 +149,10 @@ Install these via the Arduino Library Manager:
 5.  Click **Select Board > ESP32**.
 6.  Upload the code.
 
-### Flight Computer Manual
-
-You can read the flight computer's dedicated manual [here](https://github.com/mikeedudee/HANGGANG-SA-DULO-High-Powered-Rocket-Flight-Computer/blob/e7eedb402010caab72abb6217577f084e4449893/docs/USER_MANUAL.md), this contain the pinout, default configurations, thresholds, and timings that you need to set it up and modify the right variables.
+> [!IMPORTANT]
+> ### Flight Computer Manual
+> 
+> You can read the flight computer's dedicated manual [here](https://github.com/mikeedudee/HANGGANG-SA-DULO-High-Powered-Rocket-Flight-Computer/blob/e7eedb402010caab72abb6217577f084e4449893/docs/USER_MANUAL.md), this contain the pinout, default configurations, thresholds, and timings that you need to set it up and modify the right variables to fit your system framework.
 
 ---
 
