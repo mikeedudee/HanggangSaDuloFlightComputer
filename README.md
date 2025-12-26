@@ -55,7 +55,7 @@
 
 **STATUS:** Flight Ready (subject to HIL verification).
 
-The **HANGGANG SA DULO Flight Computer** is a safety-critical avionics software developed for high-power rocketry missions. The programming structure runs on the **ESP32** microcontroller platform but can also be modified to be compatible with other microcontrollers (e.g., any Teensy or Arduino), utilizing the **MS5611** high-precision barometric sensor for altitude determination.
+Our rocket's **Flight Computer Algorithm** is designed to be a safety-critical avionics software developed for high-power rocketry missions. The programming structure runs on the **ESP32** microcontroller platform but can also be modified to be compatible with other microcontrollers (e.g., any Teensy or Arduino), utilizing the **MS5611** high-precision barometric sensor for altitude determination.
 
 This system implements a deterministic **Finite State Machine (FSM)** to manage flight phases, from ground idling to dual-deployment recovery. It is built strictly following the **NASA Power of Ten** coding standards to ensure maximum reliability in harsh operating environments.
 
