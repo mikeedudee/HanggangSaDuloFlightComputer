@@ -26,6 +26,7 @@
   <a href="#safety-warnings">Warnings</a> •
   <a href="#critical-incident-report">CIR</a> •
   <a href="#license">License</a>
+  <a href="#contributing">Contrirbute</a>
 </p>
 
 <a id="flight-demonstration"></a>
@@ -213,3 +214,8 @@ This project is released under a custom **Open Access License**.
 See the [LICENSE](LICENSE) file for full details.
 
 **Copyright © 2025 HANGGANG SA DULO Project Team**
+
+---
+
+## Contributing
+Contributions, issues, and feature requests are welcome — please open an issue or submit a pull request on GitHub.
