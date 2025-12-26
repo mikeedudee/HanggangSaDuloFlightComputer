@@ -75,7 +75,7 @@ This system implements a deterministic **Finite State Machine (FSM)** to manage 
     * **Black Box Logging:** Buffered writes to onboard Flash (SPIFFS) to capture high-speed descent data.
 
 ### Version 1.0.0
-  * [You can download the original unrefactored and unclean version (click me)](https://github.com/mikeedudee/HanggangSaDuloFlightComputer.git).
+  * [You can download the original unrefactored and unclean version (click me)](https://github.com/mikeedudee/HanggangSaDuloFlightComputer/tree/v1.0.0).
 
 ---
 
