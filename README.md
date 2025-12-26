@@ -62,8 +62,7 @@ This system implements a deterministic **Finite State Machine (FSM)** to manage 
 ### 🆕 What's New in v1.1.0
 * **Modular Architecture:** Codebase refactored into isolated modules (`Sensors`, `FlightLogic`, `GlobalVariables`) for improved maintainability.
 * **Safety Upgrade:** Implemented Hardware Watchdog Timer (WDT) to prevent system freezes.
-* **Incident Fix:** Added mandatory Active-Low initialization for Pyro channels to prevent premature firing (See *Critical Incident Report*).
-
+* **Incident Fix:** Added mandatory Active-Low initialization for Pyro channels to prevent premature firing (See <a href="#critical-incident-report">*Critical Incident Report*</a>). 
 ### 🚀 Key Features
 
 * **Dual Deployment Recovery:** Independent logic for **Drogue** (at Apogee) and **Main** parachutes (at 300m AGL).
@@ -93,7 +92,7 @@ The software is optimized for the following hardware configuration:
 | **MCU** | ESP32-WROOM-32 | Central Processing Unit |
 | **Sensor** | MS5611 (I2C) | Barometric Pressure & Temperature |
 | **Storage** | SPIFFS (Onboard Flash) | Telemetry Data Logging |
-| **Power** | 2S/3S LiPo | System Power |
+| **Power** | 2S LiPo | System Power Provides 1-2 hours continuous operation  |
 
 ### 🔌 Pinout Configuration
 
