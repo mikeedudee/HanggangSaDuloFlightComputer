@@ -152,7 +152,7 @@ Install these via the Arduino Library Manager:
 
 ### Flashing Instructions
 1.  Clone/Download this repository.
-2.  **IMPORTANT:** Open the folder `HSD_Flight_Computer` and select `HSD_Flight_Computer.ino`.
+2.  **IMPORTANT:** Open the folder `HANGGANG SA DULO Flight Computer` then go to `main` folder and select `main.ino`.
 3.  *Note: The Arduino IDE will automatically open the associated module tabs (`FlightLogic`, `Sensors`).*
 4.  Connect your ESP32 via USB.
 5.  Click **Select Board > ESP32**.
