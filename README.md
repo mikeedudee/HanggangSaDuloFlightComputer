@@ -44,6 +44,9 @@
 * **Chester Hahne Conde**
 * **Ezralph Legara**
 
+**Competition Joined**
+* 1st Philippine CanSatellite and Rocket Competition 2025.
+
 ---
 
 <a id="overview"></a>
@@ -51,7 +54,7 @@
 
 **STATUS:** Flight Ready (subject to HIL verification).
 
-The **HANGGANG SA DULO Flight Computer** is a safety-critical avionics software suite designed for high-power rocketry missions. It is programmed to run on the **ESP32** microcontroller platform but can also be modified to be compatible with other microcontrollers (e.g., any Teensy or Arduino), utilizing the **MS5611** high-precision barometric sensor for altitude determination.
+The **HANGGANG SA DULO Flight Computer** is a safety-critical avionics software programmed for high-power rocketry missions. The programming structure run on the **ESP32** microcontroller platform but can also be modified to be compatible with other microcontrollers (e.g., any Teensy or Arduino), utilizing the **MS5611** high-precision barometric sensor for altitude determination.
 
 This system implements a deterministic **Finite State Machine (FSM)** to manage flight phases, from ground idling to dual-deployment recovery. It is built strictly following the **NASA Power of Ten** coding standards to ensure maximum reliability in harsh operating environments.
 
