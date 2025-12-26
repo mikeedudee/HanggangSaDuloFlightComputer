@@ -26,7 +26,7 @@
   <a href="#safety-warnings">Warnings</a> •
   <a href="#critical-incident-report">CIR</a> •
   <a href="#license">License</a>
-  <a href="#contributing">Contrirbute</a>
+  <a href="#contributing">Contribute</a>
 </p>
 
 <a id="flight-demonstration"></a>
