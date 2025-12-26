@@ -45,7 +45,7 @@
 * **Ezralph Legara**
 
 **Competition Joined**
-* 1st Philippine CanSatellite and Rocket Competition 2025.
+* 1st Philippine CanSatellite and Rocket Competition, June 2025.
 
 ---
 
