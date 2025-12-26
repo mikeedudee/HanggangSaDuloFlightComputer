@@ -45,8 +45,12 @@
 * **Chester Hahne Conde**
 * **Ezralph Legara**
 
-**Competition Joined**
+**Competition Joined:**
 * 1st Philippine CanSatellite and Rocket Competition, July 2025.
+
+**Affiliation:**
+* Indiana Aerospace University. [Website](https://iau.com.ph/)
+* Aerospace Engineering Department
 
 ---
 
