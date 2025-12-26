@@ -1,4 +1,4 @@
-# HANGGANG SA DULO Flight Computer
+# HANGGANG SA DULO High-Powered Rocket Flight Computer
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/05c8afb9-38a4-44ea-89b6-ba5198003a4d" width="45%" />
