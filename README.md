@@ -1,8 +1,8 @@
 # HANGGANG SA DULO High-Powered Rocket Flight Computer
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/05c8afb9-38a4-44ea-89b6-ba5198003a4d" width="45%" />
-  <img src="https://github.com/user-attachments/assets/7fc80d0b-43b0-4a93-a6b9-b0d8dd8cc3ac" width="45%" />
+  <img src="https://github.com/user-attachments/assets/70a5d529-9199-425e-9350-270b1d5ea5c9" width="45%" />
+  <img src="https://github.com/user-attachments/assets/2a2643f3-505d-4e83-90fd-6f29317d1129" width="45%" />
 </p>
 
 <p align="center">
