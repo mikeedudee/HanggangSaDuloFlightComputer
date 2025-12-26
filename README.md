@@ -106,6 +106,37 @@ The software is optimized for the following hardware configuration:
 | **21 (SDA)** | I2C SDA | MS5611 Data |
 | **22 (SCL)** | I2C SCL | MS5611 Clock |
 
+### Thresholds and Timing
+
+All runtime parameters live in `GlobalVariables.h`. Update these for your vehicle before flight.
+
+| Parameter | Default | Meaning |
+|---|---:|---|
+| `ALT_ARM_THRESHOLD_M` | 10 m | Arming altitude. Below this value, ejection is inhibited. |
+| `ALT_DEPLOY_THRESHOLD_M` | 5 m | Nominal (low‑altitude) deployment threshold (use with caution). |
+| `ALT_RESET_THRESHOLD_M` | 50 m | Reset/logging stop threshold during descent. |
+| `MAX_ALT_JUMP_M` | 30 m | Reject unrealistically large altitude jumps. |
+| `LOOP_INTERVAL_MS` | 300 ms | Main loop cadence. |
+| `TIME_BASED_EJECTION_MS` | 12,000 ms | Contingency ejection delay once started. |
+| `FIRE_DURATION_MS` | 500 ms | Pyro firing pulse duration per channel. |
+| `CONTINGENCY_WAIT_MS` | 5,000 ms | Gap between contingency drogue and main fires. |
+| `CONTINGENCY_SAVE_PERIOD_MS` | 120,000 ms | Log period after contingency deployment. |
+| `RESET_SAVE_PERIOD_MS` | 3,000 ms | Log period after reset on descent. |
+
+### Wi-Fi Configuration
+
+| Parameters | Default Value |
+|---|---:|
+| `WIFI_SSID` | HANGGANG SA DULO Telemetry |
+| `WIFI_PASSWORD` | HSDGRP09 |
+| `UDP_PORT` | 4210 |
+| `BROADCAST_IP` | 192, 168, 4, 255 |
+
+>[!NOTE]
+> **Main deployment setpoint**: `MAIN_DEPLOY_ALT_AGL_M = 300` meters (configure to your vehicle’s needs).
+> Likewise, in the Wi-Fi parameters, you change to your liking.
+
+
 > [!IMPORTANT]
 > **⚠️ WARNING:** Ensure your deployment hardware (MOSFETs/Relays) is **Active HIGH**. If using Active LOW relays, the firing logic in `GlobalVariables.h` must be inverted, or charges will fire on boot.
 
