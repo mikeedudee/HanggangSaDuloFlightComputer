@@ -78,7 +78,7 @@ This system implements a deterministic **Finite State Machine (FSM)** to manage 
     * **Black Box Logging:** Buffered writes to onboard Flash (SPIFFS) to capture high-speed descent data.
 
 ### Version 1.0.0
-  * [You can download the original unrefactored and unclean version (click me)](https://github.com/mikeedudee/HanggangSaDuloFlightComputer/tree/v1.0.0).
+  * You can download the original unrefactored and unclean version [here](https://github.com/mikeedudee/HanggangSaDuloFlightComputer/tree/v1.0.0).
 
 ---
 
@@ -125,7 +125,7 @@ All runtime parameters live in `GlobalVariables.h`. Update these for your vehicl
 
 ### Wi-Fi Configuration
 
-| Parameters | Default Value |
+| Parameter | Default Value |
 |---|---:|
 | `WIFI_SSID` | HANGGANG SA DULO Telemetry |
 | `WIFI_PASSWORD` | HSDGRP09 |
