@@ -109,7 +109,7 @@ The software is optimized for the following hardware configuration:
 ### 🎚️ Thresholds and Timing
 
 > [!NOTE]
-> All runtime parameters live in `GlobalVariables.h`. Update these in accordance with your flight mission before flight.
+> All runtime parameters live in `GlobalVariables.h`. Update these in accordance with your flight mission.
 
 | Parameter | Default | Meaning |
 |---|---:|---|
