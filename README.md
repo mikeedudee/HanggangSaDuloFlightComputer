@@ -176,7 +176,7 @@ Install these via the Arduino Library Manager:
 > **Mission:** HANGGANG SA DULO (JUNE 2025)
 > **Status:** RESOLVED (Successful Flight Achieved)
 
-During the setup and initialization phase on the launchpad, our team experienced a **premature firing incident** where the ejection charges fired twice immediately upon powering on the flight computer.
+During the setup and initialization phase on the launchpad, our team experienced a **premature firing incident** where the ejection charges fired twice immediately upon powering on the flight computer, which damaged the radio communication of our CanSatellite, impairing our live telemetry communication.
 
 **Root Cause:**
 The issue was traced to an unchecked line of code in the `setup()` sequence. The GPIO pins controlling the MOSFETs were not explicitly initialized to their "SAFE" (LOW) state before the main loop began, or leftover simulation logic (toggling pins HIGH) was inadvertently left active.
