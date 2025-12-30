@@ -22,7 +22,7 @@
 
 ## **2. SYSTEM OVERVIEW**
 
-The HANGGANG SA DULO Flight Computer is an autonomous avionics system designed to manage the ascent and recovery of high-power rockets.
+This Flight Computer is specifically designed to have aan autonomous avionics system to manage the ascent and recovery of our rocket.
 
 * **Primary Sensor:** MS5611 Barometer (Altitude resolution: ~10cm).
 * **Recovery Logic:** Dual Deployment (Drogue at Apogee, Main at 300m AGL).
